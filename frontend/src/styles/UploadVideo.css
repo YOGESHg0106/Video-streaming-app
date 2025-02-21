@@ -1,0 +1,138 @@
+/* 🌟 Container Styles */
+.upload-container {
+  max-width: 450px;
+  margin: auto;
+  text-align: center;
+  padding: 25px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.upload-container:hover {
+  transform: scale(1.02);
+}
+
+/* 📝 Title */
+h2 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+/* ✅ Input Fields */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 📂 File Upload Button */
+.custom-file-upload {
+  display: inline-block;
+  padding: 12px 18px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-file-upload:hover {
+  background: #0056b3;
+}
+
+/* 🚀 Upload & Back Buttons */
+button {
+  padding: 12px 18px;
+  margin: 8px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.back-button {
+  background: #ff4d4d;
+}
+
+.back-button:hover {
+  background: #d83434;
+}
+
+/* 🔄 Progress Bar */
+.progress-bar {
+  width: 100%;
+  max-width: 400px;
+  background: #e0e0e0;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 12px auto;
+}
+
+.progress-bar div {
+  height: 100%;
+  background: #28a745;
+  width: 0;
+  transition: width 0.4s ease-in-out;
+}
+
+/* 🔔 Status Messages */
+.message {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* 📱 Mobile Optimization */
+@media (max-width: 768px) {
+  .upload-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+
+  .custom-file-upload {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+}
